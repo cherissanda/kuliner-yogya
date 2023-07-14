@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registrasi Restoran</title>
+</head>
+<body>
+  <h1>Formulir Registrasi Restoran</h1>
+  
+  <form>
+    <label for="namaRestoran">Nama Restoran:</label>
+    <input type="text" id="namaRestoran" name="namaRestoran" required><br><br>
+    
+    <label for="alamat">Alamat:</label>
+    <input type="text" id="alamat" name="alamat" required><br><br>
+    
+    <label>Jenis Makanan:</label><br>
+    <input type="checkbox" id="tradisional" name="jenisMakanan" value="tradisional">
+    <label for="tradisional">Tradisional</label><br>
+    
+    <input type="checkbox" id="nusantara" name="jenisMakanan" value="nusantara">
+    <label for="nusantara">Nusantara</label><br>
+    
+    <input type="checkbox" id="western" name="jenisMakanan" value="western">
+    <label for="western">Western</label><br><br>
+    
+    <label for="namaPemilik">Nama Pemilik:</label>
+    <input type="text" id="namaPemilik" name="namaPemilik" required><br><br>
+    
+    <input type="submit" value="Daftar">
+    <button type="button" onclick="cancel()">Cancel</button>
+  </form>
+  
+  <script>
+    function cancel() {
+      // Aksi yang dijalankan saat tombol Cancel ditekan
+      // Misalnya, mengarahkan pengguna ke halaman lain atau membersihkan formulir
+      alert("Registrasi dibatalkan");
+    }
+  </script>
+</body>
+</html>
